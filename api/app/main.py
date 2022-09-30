@@ -7,6 +7,7 @@ import os
 from starlette_exporter import PrometheusMiddleware, handle_metrics
 from .models import BaseSQL, engine
 from . import routers
+from datetime import datetime
 
 app = FastAPI(
     title="My title",
